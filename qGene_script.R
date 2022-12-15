@@ -78,7 +78,7 @@ write.csv(Normalised,"sampleAnalysis.csv", row.names = FALSE)
 
 
 # Write censored data to your drive (if you wish)
-write.csv(list,"C:/Users/tyson/OneDrive/Documents/filenamex.csv", row.names = FALSE)
+write.csv(list,"sampleCensored.csv", row.names = FALSE)
 
 
 
