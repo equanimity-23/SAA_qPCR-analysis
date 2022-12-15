@@ -10,7 +10,7 @@ library(dplyr)
 # Before analysis confirm Amplification efficiencies and standard deviation of samples is usable
 
 # Change this to your Dataset name
-Data <- read.csv("sampleData.csv")
+Data <- read.csv("homozygotesData.csv")
 
 #Sets % SEM cutoff for samples (default 25%)
 SEMCutoff = 25
@@ -74,11 +74,11 @@ Normalised
 list
 
 # Write to your drive as an excel file, you will have to edit below file pathway
-write.csv(Normalised,"sampleAnalysis.csv", row.names = FALSE)
+write.csv(Normalised,"homozygotesAnalysis.csv", row.names = FALSE)
 
 
 # Write censored data to your drive (if you wish)
-write.csv(list,"C:/Users/tyson/OneDrive/Documents/filenamex.csv", row.names = FALSE)
+write.csv(list,"homozygotesCensored.csv", row.names = FALSE)
 
 
 
