@@ -4,6 +4,7 @@
 library(dplyr)
 library(broom)
 
+
 ## import data
 data <- read.csv("sampleAnalysis.csv")
 
@@ -17,6 +18,6 @@ shapiro.test(data$MNE)
 ## Paired t-test with Welch's correction
 res <- tidy(t.test(MNE ~ Group, data))
 
-
 ## print t-test results
 write.csv(res, "sampleResults.csv")
+
