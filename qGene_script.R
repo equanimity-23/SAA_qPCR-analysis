@@ -78,11 +78,8 @@ write.csv(Normalised,"homozygotesAnalysis.csv", row.names = FALSE)
 
 
 # Write censored data to your drive (if you wish)
-<<<<<<< HEAD
 write.csv(list,"homozygotesCensored.csv", row.names = FALSE)
-=======
 write.csv(list,"sampleCensored.csv", row.names = FALSE)
->>>>>>> 7795024ed90c594c384de26d442ec26f07115da1
 
 
 
