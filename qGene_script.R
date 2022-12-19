@@ -16,7 +16,7 @@ Data <- read.csv("homozygotesData.csv")
 SEMCutoff = 25
 
 # Do you wish to automatically censor data over the above SEM% threshold? 0 = no, 1 = yes (default yes)
-UseCutoff = 1
+UseCutoff = 0
 
 # Change std Amp. efficiencies if necessary
 TarAmp = 2.07 # SINV
