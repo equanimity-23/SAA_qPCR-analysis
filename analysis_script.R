@@ -6,7 +6,7 @@ library(broom)
 
 
 ## import data
-data <- read.csv("sampleAnalysis.csv")
+data <- read.csv("homozygotesAnalysis.csv")
 
 ## Test for normal distribution using Shapiro-Wilk's test
 shapiro.test(data$MNE)
@@ -19,5 +19,5 @@ shapiro.test(data$MNE)
 res <- tidy(t.test(MNE ~ Group, data))
 
 ## print t-test results
-write.csv(res, "sampleResults.csv")
+write.csv(res, "homozygotesResults.csv")
 
